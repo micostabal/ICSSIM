@@ -301,7 +301,7 @@ def simular(planta):
 
                 while not bool:
                     #print(print_state(classifier, pidrums_d, pfidrums_d, rmidrums_d, packagingmachines_d, prefinishmachines_d))
-                    x = input(f"Se acaba de eliminar la workorder {str(workorder)} porque no hay RMI disponible. \nDeseas continuar? Si no, corta el programa")
+                    #x = input(f"Se acaba de eliminar la workorder {str(workorder)} porque no hay RMI disponible. \nDeseas continuar? Si no, corta el programa")
                     if not vaciando_final:
                         eliminadas.append(workorder)
 
@@ -457,7 +457,8 @@ def simular(planta):
     'costo_total': round(float(get_cost(final_inventory, name)), 3),
     'suma_rmis_remanente': suma_rmis_remanente,
     'suma_desperdicios': sum([x[2] for x in desperdicios]),
-    'porcentaje_cubierto': porcentaje_cubierto(workorders_inventory)
+    'porcentaje_cubierto': porcentaje_cubierto(workorders_inventory),
+    'workorders_eliminadas': len(eliminadas)
     }
 
 if __name__ == '__main__':
