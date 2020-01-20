@@ -11,7 +11,7 @@ def crear_wo(lugar):
 
     items = defaultdict(int)
 
-    file1 = open("WO/WO_{}".format(lugar),'rb')
+    file1 = open("WO2/WO_{}".format(lugar),'rb')
     WO = pickle.load(file1)
 
     # Aquí va la decisión
@@ -21,6 +21,7 @@ def crear_wo(lugar):
     demanda = defaultdict(int)
 
     i = 0
+    WorkOrder.id = 0
     for w in WO:
         if Decimal(str(round(w[1], 3))) > 0:
             wk = WorkOrder(w[0], Decimal(str(round(w[1], 3))), w[2],w[3],w[4])

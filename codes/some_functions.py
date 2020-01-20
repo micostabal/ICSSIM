@@ -169,7 +169,7 @@ def todo_vacio_post(bins, maquinas):
 def hay_rmi(rmis, color):
     for rmi in rmis:
         if rmi.color == color and rmi.inventory > 0 and rmi.inventory < 0.1:
-            print(f"Se vacía RMI {rmi.color} porque tenía inventario {rmi.inventory} que por aproximación no sirve")
+            #print(f"Se vacía RMI {rmi.color} porque tenía inventario {rmi.inventory} que por aproximación no sirve")
             rmi.inventory = 0
         if rmi.color == color and rmi.inventory > 0:
             return rmi
@@ -181,7 +181,7 @@ def alcanza_rmi(rmis, color, workorder, dicc, porcentajes, modificadas):
             suma += rmi.inventory
     if 0.1 > workorder.qty - round(suma*porcentajes[workorder.color][workorder.size], 3) - dicc[workorder.color][workorder.size] > 0:
         if round(suma*porcentajes[workorder.color][workorder.size], 3) + dicc[workorder.color][workorder.size]:
-            print(f"Modificando WorkOrder {workorder} que le falta menos de 0.1 para que alcance el RMI")
+            #print(f"Modificando WorkOrder {workorder} que le falta menos de 0.1 para que alcance el RMI")
             workorder.qty = round(suma*porcentajes[workorder.color][workorder.size], 3) + dicc[workorder.color][workorder.size]
             modificadas.append((workorder, str(workorder), workorder.qty, round(suma*porcentajes[workorder.color][workorder.size], 3) + dicc[workorder.color][workorder.size]))
 
@@ -324,7 +324,7 @@ def porcentaje_cubierto(final_inv):
                     if necesario[color][size][flavor][pckg] >= final_inv[color][size][flavor][pckg]:
                         necesario[color][size][flavor][pckg] -= final_inv[color][size][flavor][pckg]
                     else:
-                        print(f"Resta negativa {color} {size} {flavor} {pckg}. Demanda: {necesario[color][size][flavor][pckg]}. Tengo: {final_inv[color][size][flavor][pckg]}")
+                        #print(f"Resta negativa {color} {size} {flavor} {pckg}. Demanda: {necesario[color][size][flavor][pckg]}. Tengo: {final_inv[color][size][flavor][pckg]}")
                         necesario[color][size][flavor][pckg] -= final_inv[color][size][flavor][pckg]
     sobrante = 0
     for color in necesario:
@@ -333,7 +333,7 @@ def porcentaje_cubierto(final_inv):
                 for pckg in necesario[color][size][flavor]:
                     sobrante += float(necesario[color][size][flavor][pckg])
 
-    print(f"Porcentaje cubierto de la demanda: {(1 - sobrante/total)*100}%")
+    return (1 - sobrante/total)*100
 
 def verificar_completo(producido, workorders, modificadas):
     for wk in workorders:

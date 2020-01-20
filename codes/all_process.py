@@ -83,7 +83,7 @@ def pfo_while(tiempo, classifier, prefinishmachines_d, packagingmachines_d, rmid
 
 
             if desperdicio:
-                print(f"Desperdicio: {pfo_usar.processing} de la WorkOrder {workorder_pfo}")
+                #print(f"Desperdicio: {pfo_usar.processing} de la WorkOrder {workorder_pfo}")
                 desperdicios.append([pfo_usar.color, pfo_usar.size, float(pfo_usar.processing)])
 
                 produced_colors_sizes[pfo_usar.color][pfo_usar.size] -= pfo_usar.processing

@@ -74,6 +74,10 @@ def simular(planta):
 
     name, lname = options[planta]
 
+    print("\n--------------------------------")
+    print(f"Planta {name}")
+    print("--------------------------------\n")
+
     workorders = crear_wo(name)['workorders']
     demanda = crear_wo(name)['demanda']
 
@@ -123,6 +127,7 @@ def simular(planta):
     imprimir_tiempo = False
     modificadas = []
     cantidad_total_workorders = len(workorders)
+    suma_rmis_remanente = 0
 
     # Workorders vigentes en cada máquina
     workorders_vigentes_prefinish = deque()
@@ -152,14 +157,15 @@ def simular(planta):
             Se printeará cada 100 horas si no está el printear activado
 
         """
-        print(string)
+        #print(string)
 
     while (workorders or workorders_vigentes_packaging or workorders_vigentes_prefinish or not todo_vacio([rmidrums_d, pfidrums_d, pidrums_d], [classifier_d, packagingmachines_d, prefinishmachines_d])):
 
-        if vaciando_final and not imprimir_tiempo:
+        if not imprimir_tiempo: tiempo_termino_wo = 0
+        if vaciando_final  and not imprimir_tiempo:
             boolean = is_demand_complete(workorders, workorders_vigentes_prefinish, workorders_vigentes_packaging, cantidad_total_workorders)
             if boolean:
-                print(f"\n\nTerminaron las WO's en {round(tiempo/3600/(24*30), 4)} meses. \n\n")
+                #print(f"\n\nTerminaron las WO's en {round(tiempo/3600/(24*30), 4)} meses. \n\n")
                 tiempo_termino_wo = round(tiempo/3600/(24*30), 4)
                 imprimir_tiempo = True
 
@@ -170,20 +176,22 @@ def simular(planta):
             porcentajes_color_del_rmi = porcentajes[rmi_faltante.color]
 
             if not vaciando_final:
-                x = input(f"Vaciando RMIS... Enter para seguir")
-                print("Esto es lo que queda de los RMI")
+
+                #x = input(f"Vaciando RMIS... Enter para seguir")
+                #print("Esto es lo que queda de los RMI")
 
                 total_rmis = []
 
                 for rmi in rmidrums_d:
-                    print(rmi)
+                    #print(rmi)
                     total_rmis.append([rmi.color, rmi.inventory])
 
-                with open('generated/RMI_mod_sobrante.csv', 'w', newline='') as file:
+                with open(f'generated/RMI_mod_sobrante_{name}.csv', 'w', newline='') as file:
                     writer = csv.writer(file, delimiter=',')
                     writer.writerow(['Location Name', 'Drum', 'Color', 'Qty', 'Capacity'])
-                    for rmi in rmidrums:
+                    for rmi in rmidrums_d:
                         writer.writerow([rmi.site, rmi.id, rmi.color, float(rmi.inventory), float(rmi.capacity)])
+                        suma_rmis_remanente += float(rmi.capacity)
 
                 print("\n")
                 vaciando_final = True
@@ -217,7 +225,7 @@ def simular(planta):
             print(f"Tiempo: {round(tiempo/3600, 4)} horas. Se viene {proximo}")
 
         if not printear and tiempo/3600 > initial:
-            print(f"Tiempo: {tiempo//3600} horas. Aprox. {round(tiempo/3600/(24*30), 2)} meses")
+            #print(f"Tiempo: {tiempo//3600} horas. Aprox. {round(tiempo/3600/(24*30), 2)} meses")
             initial += 100
 
         if tiempo > 99999999999999:
@@ -426,6 +434,7 @@ def simular(planta):
 
 
     if not over:
+        """
         print(f"Se eliminaron {len(eliminadas)} workorders.")
         print(f"Terminó! Tiempo total de demora: {tiempo/3600/24/30} meses")
 
@@ -436,20 +445,21 @@ def simular(planta):
 
         for wk in modificadas:
             print(wk)
-
-        with open("generated/workorders_eliminadas", "wb") as file:
-            pickle.dump(eliminadas, file)
-        with open("generated/desperdicios", "wb") as file:
-            pickle.dump(desperdicios, file)
-
-        porcentaje_cubierto(workorders_inventory)
+        """
+        #with open("generated/workorders_eliminadas_{name}", "wb") as file:
+        #    pickle.dump(eliminadas, file)
+        #with open("generated/desperdicios_{name}", "wb") as file:
+        #    pickle.dump(desperdicios, file)
 
     return {
-    'tiempo_wo': round(float(tiempo_termino_wo), 3),
+    'tiempo_wo': round(float(tiempo_termino_wo), 3) if tiempo_termino_wo else round(float(tiempo/3600/24/30), 3),
     'tiempo_total': round(float(tiempo/3600/24/30), 3),
-    'costo_total': round(float(get_cost(final_inventory, name)), 3)
+    'costo_total': round(float(get_cost(final_inventory, name)), 3),
+    'suma_rmis_remanente': suma_rmis_remanente,
+    'suma_desperdicios': sum([x[2] for x in desperdicios]),
+    'porcentaje_cubierto': porcentaje_cubierto(workorders_inventory)
     }
 
 if __name__ == '__main__':
-    s1 = simular('3')
+    s1 = simular('1')
     print(s1)
