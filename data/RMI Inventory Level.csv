@@ -1,0 +1,208 @@
+Location Name,Drum,Color,Qty,Capacity
+Detroit,1,Coloring Agent7,300000.0,300000
+Detroit,2,Coloring Agent24,300000.0,300000
+Detroit,3,Coloring Agent40,179135.0,300000
+Detroit,4,Coloring Agent25,300000.0,300000
+Detroit,5,Coloring Agent28,300000.0,300000
+Detroit,6,Coloring Agent14,300000.0,300000
+Detroit,7,Coloring Agent11,172698.0,300000
+Detroit,8,Coloring Agent21,299999.9999993187,300000
+Detroit,9,Coloring Agent12,300000.0,300000
+Detroit,10,Coloring Agent16,300000.0,300000
+Detroit,11,Coloring Agent37,300000.0000000773,300000
+Detroit,13,Coloring Agent30,300000.0,300000
+Detroit,14,Coloring Agent10,299999.9999997097,300000
+Detroit,15,Coloring Agent6,300000.0,300000
+Detroit,16,Coloring Agent19,299999.9999999966,300000
+Detroit,17,Coloring Agent22,299999.99999986833,300000
+Detroit,18,Coloring Agent8,300000.0,300000
+Detroit,19,Coloring Agent40,300000.0,300000
+Detroit,20,Coloring Agent23,299999.99999986973,300000
+Detroit,21,Coloring Agent27,300000.0,300000
+Detroit,22,Coloring Agent17,211744.99999987296,300000
+Detroit,23,Coloring Agent3,299999.99999987346,300000
+Detroit,24,Coloring Agent4,300000.0,300000
+Detroit,25,Coloring Agent35,300000.0,300000
+Detroit,26,Coloring Agent39,300000.0,300000
+Detroit,27,Coloring Agent9,300000.0,300000
+Detroit,28,Coloring Agent18,300000.0,300000
+Detroit,29,Coloring Agent27,200140.0,300000
+Detroit,30,Coloring Agent17,300000.0000001807,300000
+Detroit,31,Coloring Agent15,299999.99999986903,300000
+Detroit,32,Coloring Agent38,300000.0,300000
+Detroit,33,Coloring Agent33,300000.0,300000
+Detroit,34,Coloring Agent32,300000.0,300000
+Detroit,35,Coloring Agent13,300000.0,300000
+Detroit,36,Coloring Agent11,300000.0,300000
+Detroit,37,Coloring Agent36,300000.0,300000
+Detroit,38,Coloring Agent30,191861.0,300000
+Detroit,39,Coloring Agent20,300000.0,300000
+Detroit,12,,,300000
+Detroit,40,,,300000
+Columbus,1,Coloring Agent7,300000.0,320000
+Columbus,2,Coloring Agent24,300000.0,320000
+Columbus,3,Coloring Agent40,179135.0,320000
+Columbus,4,Coloring Agent25,300000.0,320000
+Columbus,5,Coloring Agent28,300000.0,320000
+Columbus,6,Coloring Agent14,300000.0,320000
+Columbus,7,Coloring Agent11,172698.0,320000
+Columbus,8,Coloring Agent21,299999.9999993187,320000
+Columbus,9,Coloring Agent12,300000.0,320000
+Columbus,10,Coloring Agent16,300000.0,320000
+Columbus,11,Coloring Agent37,300000.0000000773,320000
+Columbus,13,Coloring Agent30,300000.0,320000
+Columbus,14,Coloring Agent10,299999.9999997097,320000
+Columbus,15,Coloring Agent6,300000.0,320000
+Columbus,16,Coloring Agent19,299999.9999999966,320000
+Columbus,17,Coloring Agent22,299999.99999986833,320000
+Columbus,18,Coloring Agent8,300000.0,320000
+Columbus,19,Coloring Agent40,300000.0,320000
+Columbus,20,Coloring Agent23,299999.99999986973,320000
+Columbus,21,Coloring Agent27,300000.0,320000
+Columbus,22,Coloring Agent17,211744.99999987296,320000
+Columbus,23,Coloring Agent3,299999.99999987346,320000
+Columbus,24,Coloring Agent4,300000.0,320000
+Columbus,25,Coloring Agent35,300000.0,320000
+Columbus,26,Coloring Agent39,300000.0,320000
+Columbus,27,Coloring Agent9,300000.0,320000
+Columbus,28,Coloring Agent18,300000.0,320000
+Columbus,29,Coloring Agent27,200140.0,320000
+Columbus,30,Coloring Agent17,300000.0000001807,320000
+Columbus,31,Coloring Agent15,299999.99999986903,320000
+Columbus,32,Coloring Agent38,300000.0,320000
+Columbus,33,Coloring Agent33,300000.0,320000
+Columbus,34,Coloring Agent32,300000.0,320000
+Columbus,35,Coloring Agent13,300000.0,320000
+Columbus,36,Coloring Agent11,300000.0,320000
+Columbus,37,Coloring Agent36,300000.0,320000
+Columbus,38,Coloring Agent30,191861.0,320000
+Columbus,39,Coloring Agent20,300000.0,320000
+Columbus,12,,,320000
+Springfield,1,Coloring Agent7,300000.0,88000
+Springfield,2,Coloring Agent24,300000.0,88000
+Springfield,3,Coloring Agent40,179135.0,88000
+Springfield,4,Coloring Agent25,300000.0,88000
+Springfield,5,Coloring Agent28,300000.0,88000
+Springfield,6,Coloring Agent14,300000.0,88000
+Springfield,7,Coloring Agent11,172698.0,88000
+Springfield,8,Coloring Agent21,299999.9999993187,88000
+Springfield,9,Coloring Agent12,300000.0,88000
+Springfield,10,Coloring Agent16,300000.0,88000
+Springfield,11,Coloring Agent37,300000.0000000773,88000
+Springfield,13,Coloring Agent30,300000.0,88000
+Springfield,14,Coloring Agent10,299999.9999997097,88000
+Springfield,15,Coloring Agent6,300000.0,88000
+Springfield,16,Coloring Agent19,299999.9999999966,88000
+Springfield,17,Coloring Agent22,299999.99999986833,88000
+Springfield,18,Coloring Agent8,300000.0,88000
+Springfield,19,Coloring Agent40,300000.0,88000
+Springfield,20,Coloring Agent23,299999.99999986973,88000
+Springfield,21,Coloring Agent27,300000.0,88000
+Springfield,22,Coloring Agent17,211744.99999987296,88000
+Springfield,23,Coloring Agent3,299999.99999987346,88000
+Springfield,24,Coloring Agent4,300000.0,88000
+Springfield,25,Coloring Agent35,300000.0,88000
+Springfield,26,Coloring Agent39,300000.0,88000
+Springfield,27,Coloring Agent9,300000.0,88000
+Springfield,28,Coloring Agent18,300000.0,88000
+Springfield,29,Coloring Agent27,200140.0,88000
+Springfield,30,Coloring Agent17,300000.0000001807,88000
+Springfield,31,Coloring Agent15,299999.99999986903,88000
+Springfield,32,Coloring Agent38,300000.0,88000
+Springfield,33,Coloring Agent33,300000.0,88000
+Springfield,34,Coloring Agent32,300000.0,88000
+Springfield,35,Coloring Agent13,300000.0,88000
+Springfield,36,Coloring Agent11,300000.0,88000
+Springfield,37,Coloring Agent36,300000.0,88000
+Springfield,38,Coloring Agent30,191861.0,88000
+Springfield,39,Coloring Agent20,300000.0,88000
+Springfield,12,,,88000
+Springfield,40,,,88000
+Springfield,41,,,88000
+Springfield,42,,,88000
+Springfield,43,,,88000
+Springfield,44,,,88000
+Springfield,45,,,88000
+Springfield,46,,,88000
+Springfield,47,,,88000
+Springfield,48,,,88000
+Springfield,49,,,88000
+Springfield,50,,,88000
+Green Bay,1,Coloring Agent7,300000.0,330000
+Green Bay,2,Coloring Agent24,300000.0,330000
+Green Bay,3,Coloring Agent40,179135.0,330000
+Green Bay,4,Coloring Agent25,300000.0,330000
+Green Bay,5,Coloring Agent28,300000.0,330000
+Green Bay,6,Coloring Agent14,300000.0,330000
+Green Bay,7,Coloring Agent11,172698.0,330000
+Green Bay,8,Coloring Agent21,299999.9999993187,330000
+Green Bay,9,Coloring Agent12,300000.0,330000
+Green Bay,10,Coloring Agent16,300000.0,330000
+Green Bay,11,Coloring Agent37,300000.0000000773,330000
+Green Bay,13,Coloring Agent30,300000.0,330000
+Green Bay,14,Coloring Agent10,299999.9999997097,330000
+Green Bay,15,Coloring Agent6,300000.0,330000
+Green Bay,16,Coloring Agent19,299999.9999999966,330000
+Green Bay,17,Coloring Agent22,299999.99999986833,330000
+Green Bay,18,Coloring Agent8,300000.0,330000
+Green Bay,19,Coloring Agent40,300000.0,330000
+Green Bay,20,Coloring Agent23,299999.99999986973,330000
+Green Bay,21,Coloring Agent27,300000.0,330000
+Green Bay,22,Coloring Agent17,211744.99999987296,330000
+Green Bay,23,Coloring Agent3,299999.99999987346,330000
+Green Bay,24,Coloring Agent4,300000.0,330000
+Green Bay,25,Coloring Agent35,300000.0,330000
+Green Bay,26,Coloring Agent39,300000.0,330000
+Green Bay,27,Coloring Agent9,300000.0,330000
+Green Bay,28,Coloring Agent18,300000.0,330000
+Green Bay,29,Coloring Agent27,200140.0,330000
+Green Bay,30,Coloring Agent17,300000.0000001807,330000
+Green Bay,31,Coloring Agent15,299999.99999986903,330000
+Green Bay,32,Coloring Agent38,300000.0,330000
+Green Bay,33,Coloring Agent33,300000.0,330000
+Green Bay,34,Coloring Agent32,300000.0,330000
+Green Bay,35,Coloring Agent13,300000.0,330000
+Green Bay,36,Coloring Agent11,300000.0,330000
+Green Bay,37,Coloring Agent36,300000.0,330000
+Green Bay,38,Coloring Agent30,191861.0,330000
+Green Bay,39,Coloring Agent20,300000.0,330000
+Green Bay,12,,,330000
+Omaha,1,Coloring Agent7,300000.0,440000
+Omaha,2,Coloring Agent24,300000.0,440000
+Omaha,3,Coloring Agent40,179135.0,440000
+Omaha,4,Coloring Agent25,300000.0,440000
+Omaha,5,Coloring Agent28,300000.0,440000
+Omaha,6,Coloring Agent14,300000.0,440000
+Omaha,7,Coloring Agent11,172698.0,440000
+Omaha,8,Coloring Agent21,299999.9999993187,440000
+Omaha,9,Coloring Agent12,300000.0,440000
+Omaha,10,Coloring Agent16,300000.0,440000
+Omaha,11,Coloring Agent37,300000.0000000773,440000
+Omaha,13,Coloring Agent30,300000.0,440000
+Omaha,14,Coloring Agent10,299999.9999997097,440000
+Omaha,15,Coloring Agent6,300000.0,440000
+Omaha,16,Coloring Agent19,299999.9999999966,440000
+Omaha,17,Coloring Agent22,299999.99999986833,440000
+Omaha,18,Coloring Agent8,300000.0,440000
+Omaha,19,Coloring Agent40,300000.0,440000
+Omaha,20,Coloring Agent23,299999.99999986973,440000
+Omaha,21,Coloring Agent27,300000.0,440000
+Omaha,22,Coloring Agent17,211744.99999987296,440000
+Omaha,23,Coloring Agent3,299999.99999987346,440000
+Omaha,24,Coloring Agent4,300000.0,440000
+Omaha,25,Coloring Agent35,300000.0,440000
+Omaha,26,Coloring Agent39,300000.0,440000
+Omaha,27,Coloring Agent9,300000.0,440000
+Omaha,28,Coloring Agent18,300000.0,440000
+Omaha,29,Coloring Agent27,200140.0,440000
+Omaha,30,Coloring Agent17,300000.0000001807,440000
+Omaha,31,Coloring Agent15,299999.99999986903,440000
+Omaha,32,Coloring Agent38,300000.0,440000
+Omaha,33,Coloring Agent33,300000.0,440000
+Omaha,34,Coloring Agent32,300000.0,440000
+Omaha,35,Coloring Agent13,300000.0,440000
+Omaha,36,Coloring Agent11,300000.0,440000
+Omaha,37,Coloring Agent36,300000.0,440000
+Omaha,38,Coloring Agent30,191861.0,440000
+Omaha,39,Coloring Agent20,300000.0,440000
+Omaha,12,,,440000

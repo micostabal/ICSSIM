@@ -1,0 +1,21 @@
+1.- Asumo que el color necesario para una WorkOrder (lo que liberaré de un RMI)
+es mayor que el processing rate del classifier.
+
+TENGO Q ARREGLAR EL FORMAR LAS CLASES CON EL PROMEDIO Y LA CANTIDAD DE PREFINISH POR LUGAR SEGUN TABLA ENUNCIADO
+ARREGLAR FORMATO DE RPINTEO DE JELYL BEANS
+
+Cosas que hacer:
+
+Ver el tema de las workorders, como las ordenos. Vigente por máquina?
+
+Idea:
+
+Hacer un acumulado por color, acumulado despues como arbol para cada máquina. Así, voy procesando workorders acumuladas 
+y veo si tiene lo sufiicente de esa rama del Arbol
+
+PREGUNTA:
+Si por ejemplo por order pasa un S1 y necesito un S2. Qué flavor le pongo?
+me falta el evento de los 5 mins de cambiar flavor
+
+
+pasa que se estanca porque no se que procesar al tener cosas hechas que "no me sirven"
